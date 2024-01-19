@@ -1,0 +1,37 @@
+:root {
+    color-scheme: light dark;
+}
+.container {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+h1 {
+    padding: 10px;
+    font-size: 30px;
+    color: #BC0E0E;
+}
+img {
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+}
+.Home {
+    background-color: #262626;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
