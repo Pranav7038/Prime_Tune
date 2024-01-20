@@ -4,7 +4,9 @@
     color-scheme: light dark;
 }
 .container{
-    display: flex;;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
 .preloader {
     display: flex;
@@ -12,6 +14,9 @@
     margin-left: 5px;
     margin-right: 5px;
     
+}
+.main {
+    flex: 0.5;
 }
 h1 {
     font-family: 'Poppins', sans-serif;
@@ -28,13 +33,11 @@ img {
 }
 .Home {
     background-color: #262626;
-    flex: 0.2;
-    height: 20%;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: left;
     border-radius: 20px;
-    padding: 15px;
     justify-content: center;
 }
 li {
@@ -81,15 +84,13 @@ li {
 }
 .library {
     background-color: #262626;
-    width: 295px;
-    height: 80px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 15px;
+    margin-top: 10px;
     border-radius: 20px;
     justify-content: center;
-    margin-right: 50px;
 }
 .library-img {
     width: 100%;
@@ -101,7 +102,7 @@ li {
     margin-top: 10px;
 }
 .library-img img {
-    width: 35px;
+    width: auto;
     height: 35px;
     border-radius: 70%;
     align-content: left;
@@ -130,16 +131,41 @@ li {
 }
 .body{
     background-color: #262626;
-    display: inline-block;
-    flex: 0.8;
-    width: 50%; 
-    height:auto;
     display: flex;
+    flex: 2.5;
+    padding: 10px;
     flex-direction: column;
     align-items: left;
     border-radius: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
     justify-content: center;
     box-sizing: border-box;
+}
+.songlist1{
+    display: flex;
+    align-items: flex-start;
+}
+.song-img1 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #444343;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+}
+.song-img1 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img1 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    position: relative;
 }

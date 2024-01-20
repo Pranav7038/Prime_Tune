@@ -1,15 +1,49 @@
-/* CSS code to position three divs side by side and one below */
-.container {
-    display: flex;
-}
-
-.side-by-side {
-    flex: 1; /* Adjust the flex value as needed */
-    /* Optional: Add other styling properties */
-}
-
-.below {
-    width: 100%; /* Full width */
-    /* Optional: Add other styling properties */
-}
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  nav {
+    background-color: #666;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
