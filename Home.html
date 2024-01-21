@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Tune</title>
+    <link rel="icon" href="Music_website/logo.png" type="image/icon type">
     <link rel="stylesheet" href="Home.css">
 </head>
 <meta name="color-scheme" content="dark light">
@@ -38,27 +39,27 @@
             </div>
         </div>
         <div class="body">
-            <h1>Good Evening</h1>
+            <div id="greeting">Good Morning</div>
             <div class="songlist1">
-                <div class="song-img1">
+                <div class="song-img1" onclick="nevigateAlbum(this)">
                     <img src="Music_website/alluarjun.jpg" alt="song1">
                     <h3>Allu Arjun song</h3>
                 </div>
-                <div class="song-img2">
+                <div class="song-img2" onclick="nevigateAlbum(this)">
                     <img src="Music_website/Govyachya-Kinaryav.jpg" alt="song2">
                     <h3>Govyachya-Kinaryav song</h3>
                 </div>
-                <div class="song-img3">
+                <div class="song-img3" onclick="nevigateAlbum(this)">
                     <img src="Music_website/sahahrukhkhan.jpg" alt="song3">
                     <h3>Arman Malik song</h3>
                 </div>
-                <div class="song-img4">
+                <div class="song-img4" onclick="nevigateAlbum(this)">
                     <img src="Music_website/Darshanraval.jpg" alt="song4">
                     <h3>Darshan Raval song</h3>
                 </div>
-                <div class="song-img5">
-                    <img src="Music_website/song5.jpg" alt="song5">
-                    <li><a href="song5.php">Song5</a></li>
+                <div class="song-img5" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/arjitsingh.jpg" alt="song5">
+                    <h3>Arjit Singh song</h3>
                 </div>
             </div>
             <div class="songlist2">
@@ -86,5 +87,6 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
