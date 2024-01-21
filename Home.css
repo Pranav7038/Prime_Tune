@@ -143,6 +143,7 @@ li {
 .songlist1{
     display: flex;
     align-items: flex-start;
+    gap: 10px;
 }
 .song-img1 {
     width: fit-content;
@@ -155,6 +156,9 @@ li {
     margin-top: 10px;
     padding-inline: 10px;
 }
+.song-img1:hover{
+    background-color: #371414;
+}
 .song-img1 img {
     width: fit-content;
     height: fit-content;
@@ -163,6 +167,84 @@ li {
     position: relative;
 }
 .song-img1 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    position: relative;
+}
+.song-img2 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #444343;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+}
+.song-img2:hover{
+    background-color: #BC0E0E;
+}
+.song-img2 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img2 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    position: relative;
+}
+.song-img3 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #444343;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+}
+.song-img3 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img3 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    position: relative;
+}
+.song-img4 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #444343;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+}
+.song-img4 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img4 h3{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #ffffff;
