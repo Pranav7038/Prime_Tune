@@ -5,7 +5,6 @@
 }
 .container{
     display: flex;
-    justify-content: space-between;
     gap: 5px;
 }
 .preloader {
@@ -17,6 +16,9 @@
 }
 .main {
     flex: 0.5;
+    flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
 }
 h1 {
     font-family: 'Poppins', sans-serif;
@@ -87,7 +89,6 @@ li {
     width: auto;
     display: flex;
     flex-direction: column;
-    align-items: left;
     margin-top: 10px;
     border-radius: 20px;
     justify-content: center;
@@ -118,21 +119,127 @@ li {
 .library-img li a:hover {
     color: #BC0E0E;
 }
-.Artist li a{
+.Artist li{
     color:white;
+    cursor: pointer;
     border-radius: 25px;
     background-color: #444343; 
+    width: 40px;
+    margin-left: 10px;
     padding: 5px;
+    justify-content: center;
     font-size: small
 }
-.Artist li a:hover{
+.Artist li:hover{
     color: #BC0E0E;
+}
+.Album{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    justify-content: left;
+    display:none;
+}
+.Album1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album1:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album1 img{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.Album1 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
     padding: 5px;
+    font-size: 10px
+}
+.Album2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album2:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album2 img{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.Album2 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 10px
+}
+.Album3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album3:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album3 img{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.Album3 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 10px
+}
+.Album4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album4:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album4 img{
+    border-radius: 50px;
+    width: 35px;
+    height: 35px;
+}
+.Album4 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 10px
 }
 .body{
     margin-top: 0px;
+    flex-direction: column;
     width: 90%;
-    background-color: rgba(56, 56, 56, 0);
     padding: 10px;
     background-color: #262626;
     flex: 2.5;

@@ -34,7 +34,25 @@
                     <li><a herf="Add.php">+</a></li>
                 </div>
                 <div class="Artist">
-                    <li><a href="artists.php">Artists</a></li>
+                    <li onclick="show()">Artist</li>
+                </div>
+                <div class="Album" id="artistlist">
+                    <div class="Album1" onclick="play()">
+                        <img src="Music_website/atifasalam.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album2" onclick="play()">
+                        <img src="Music_website/armanmalik.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album3" onclick="play()">
+                        <img src="Music_website/arjitsingh.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album4" onclick="play()">
+                        <img src="Music_website/darshanraval.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,14 +105,17 @@
             <footer class="footer">
                 <div class="footer-container">
                     <ul class="inline-list">
-                            <a href="Home.php">Web Development</a>
-                            <a href="Search.php">Development</a>
-                            <a href="Add.php">Hosting</a>
+                        <a href="Home.php">Web Development</a>
+                        <a href="Search.php">Development</a>
+                        <a href="Add.php">Hosting</a>
                     </ul>
                     <ul class="social-icon">
-                        <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img src="Music_website/twitter_logo.png" alt="Twitter"></a>
-                        <a href="https://www.instagram.com/pranav8289/" target="_blank"><img src="Music_website/insta_logo.png" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img src="Music_website/fb_logo.png" alt="Facebook"></a>
+                        <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
+                                src="Music_website/twitter_logo.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/pranav8289/" target="_blank"><img
+                                src="Music_website/insta_logo.png" alt="Instagram"></a>
+                        <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img
+                                src="Music_website/fb_logo.png" alt="Facebook"></a>
                     </ul>
                 </div>
             </footer>
@@ -105,7 +126,7 @@
         <div id="masterSongName"></div>
         <img src="img/playing.gif" alt="" id="gif">
         <div class="icons">
-            <!-- fontawesome icons -->
+
             <i class="fa-solid fa-xl fa-backward-step" id="previous"></i>
             <i class="fa-solid fa-2xl fa-circle-play" id="masterPlay"></i>
             <i class="fa-solid fa-xl fa-forward-step" id="next"></i>

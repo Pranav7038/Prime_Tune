@@ -17,3 +17,12 @@ if (greeting != null)
 function navigateAlbum(ele) {
     window.location.href = `albums.php?value=${ele.id}`;
 }
+function show(){
+    var artistList = document.getElementById('artistlist');
+    if(artistList.style.display === "none"){
+        artistList.style.display = "block";
+    }
+    else{
+        artistList.style.display = "none";
+    }
+}
