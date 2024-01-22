@@ -20,11 +20,11 @@
             <div class="Home">
                 <div class="Home-img">
                     <img src="Music_website/HomeLogo.png" alt="homelogo" herf="Home.php">
-                    <li><a href="Home.php">Home</a></li>
+                    <li><a onclick="Home('home')">Home</a></li>
                 </div>
-                <div class="Search-img">
+                <div class="Search-img" id="search">
                     <img src="Music_website/SearchLogo.png" alt="searchlogo" herf="Home.php">
-                    <li><a href="Search.php">Search</a></li>
+                    <li><a onclick="Search('search')">Search</a></li>
                 </div>
             </div>
             <div class="library">
@@ -56,69 +56,73 @@
                 </div>
             </div>
         </div>
-        <div class="body">
-            <div id="greeting">Good Morning</div>
-            <div class="songlist1">
-                <div class="song-img1" onclick="nevigateAlbum(this)">
-                    <img src="Music_website/alluarjun.jpg" alt="song1">
-                    <h3>Allu Arjun song</h3>
+        <div class="body" id="home">
+            <div class="Home-body">
+                <div id="greeting">Good Morning</div>
+                <div class="songlist1">
+                    <div class="song-img1" onclick="nevigateAlbum(this)">
+                        <img src="Music_website/alluarjun.jpg" alt="song1">
+                        <h3>Allu Arjun song</h3>
+                    </div>
+                    <div class="song-img2" onclick="nevigateAlbum(this)">
+                        <img src="Music_website/Govyachya-Kinaryav.jpg" alt="song2">
+                        <h3>Govyachya-Kinaryav song</h3>
+                    </div>
+                    <div class="song-img3" onclick="nevigateAlbum(this)">
+                        <img src="Music_website/sahahrukhkhan.jpg" alt="song3">
+                        <h3>Arman Malik song</h3>
+                    </div>
+                    <div class="song-img4" onclick="nevigateAlbum(this)">
+                        <img src="Music_website/Darshanraval.jpg" alt="song4">
+                        <h3>Darshan Raval song</h3>
+                    </div>
+                    <div class="song-img5" onclick="nevigateAlbum(this)">
+                        <img src="Music_website/arjitsingh.jpg" alt="song5">
+                        <h3>Arjit Singh song</h3>
+                    </div>
                 </div>
-                <div class="song-img2" onclick="nevigateAlbum(this)">
-                    <img src="Music_website/Govyachya-Kinaryav.jpg" alt="song2">
-                    <h3>Govyachya-Kinaryav song</h3>
+                <div class="songlist2">
+                    <div class="song-img6">
+                        <img src="Music_website/song6.jpg" alt="song6">
+                        <li><a href="song6.php">Song6</a></li>
+                    </div>
+                    <div class="song-img7">
+                        <img src="Music_website/song7.jpg" alt="song7">
+                        <li><a href="song7.php">Song7</a></li>
+                    </div>
+                    <div class="song-img8">
+                        <img src="Music_website/song8.jpg" alt="song8">
+                        <li><a href="song8.php">Song8</a></li>
+                    </div>
+                    <div class="song-img9">
+                        <img src="Music_website/song9.jpg" alt="song9">
+                        <li><a href="song9.php">Song9</a></li>
+                    </div>
+                    <div class="song-img10">
+                        <img src="Music_website/song10.jpg" alt="song10">
+                        <li><a href="song10.php">Song10</a></li>
+                    </div>
                 </div>
-                <div class="song-img3" onclick="nevigateAlbum(this)">
-                    <img src="Music_website/sahahrukhkhan.jpg" alt="song3">
-                    <h3>Arman Malik song</h3>
-                </div>
-                <div class="song-img4" onclick="nevigateAlbum(this)">
-                    <img src="Music_website/Darshanraval.jpg" alt="song4">
-                    <h3>Darshan Raval song</h3>
-                </div>
-                <div class="song-img5" onclick="nevigateAlbum(this)">
-                    <img src="Music_website/arjitsingh.jpg" alt="song5">
-                    <h3>Arjit Singh song</h3>
-                </div>
+                <footer class="footer">
+                    <div class="footer-container">
+                        <ul class="inline-list">
+                            <a href="Home.php">Web Development</a>
+                            <a href="Search.php">Development</a>
+                            <a href="Add.php">Hosting</a>
+                        </ul>
+                        <ul class="social-icon">
+                            <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
+                                    src="Music_website/twitter_logo.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com/pranav8289/" target="_blank"><img
+                                    src="Music_website/insta_logo.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img
+                                    src="Music_website/fb_logo.png" alt="Facebook"></a>
+                        </ul>
+                    </div>
+                </footer>
             </div>
-            <div class="songlist2">
-                <div class="song-img6">
-                    <img src="Music_website/song6.jpg" alt="song6">
-                    <li><a href="song6.php">Song6</a></li>
-                </div>
-                <div class="song-img7">
-                    <img src="Music_website/song7.jpg" alt="song7">
-                    <li><a href="song7.php">Song7</a></li>
-                </div>
-                <div class="song-img8">
-                    <img src="Music_website/song8.jpg" alt="song8">
-                    <li><a href="song8.php">Song8</a></li>
-                </div>
-                <div class="song-img9">
-                    <img src="Music_website/song9.jpg" alt="song9">
-                    <li><a href="song9.php">Song9</a></li>
-                </div>
-                <div class="song-img10">
-                    <img src="Music_website/song10.jpg" alt="song10">
-                    <li><a href="song10.php">Song10</a></li>
-                </div>
+            <div class="search-body">
             </div>
-            <footer class="footer">
-                <div class="footer-container">
-                    <ul class="inline-list">
-                        <a href="Home.php">Web Development</a>
-                        <a href="Search.php">Development</a>
-                        <a href="Add.php">Hosting</a>
-                    </ul>
-                    <ul class="social-icon">
-                        <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
-                                src="Music_website/twitter_logo.png" alt="Twitter"></a>
-                        <a href="https://www.instagram.com/pranav8289/" target="_blank"><img
-                                src="Music_website/insta_logo.png" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img
-                                src="Music_website/fb_logo.png" alt="Facebook"></a>
-                    </ul>
-                </div>
-            </footer>
         </div>
     </div>
     <div class="bottom" id="hideBottom">
