@@ -154,15 +154,15 @@ li {
 }
 .Album1 img{
     border-radius: 50px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 .Album1 h3{
     color:white;
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     padding: 5px;
-    font-size: 10px
+    font-size: 15px
 }
 .Album2{
     margin-top: 5px;
@@ -178,15 +178,15 @@ li {
 }
 .Album2 img{
     border-radius: 50px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 .Album2 h3{
     color:white;
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     padding: 5px;
-    font-size: 10px
+    font-size: 15px
 }
 .Album3{
     margin-top: 5px;
@@ -202,15 +202,15 @@ li {
 }
 .Album3 img{
     border-radius: 50px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 .Album3 h3{
     color:white;
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     padding: 5px;
-    font-size: 10px
+    font-size: 15px
 }
 .Album4{
     margin-top: 5px;
@@ -226,15 +226,15 @@ li {
 }
 .Album4 img{
     border-radius: 50px;
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 .Album4 h3{
     color:white;
     font-family: 'Poppins', sans-serif;
     border-radius: 25px;
     padding: 5px;
-    font-size: 10px
+    font-size: 15px
 }
 .body{
     margin-top: 0px;
@@ -242,7 +242,7 @@ li {
     width: 90%;
     padding: 10px;
     background-color: #262626;
-    flex: 2.5;
+    flex: 2;
     border-radius: 20px;
 }
 #greeting{
@@ -405,7 +405,6 @@ li {
     font-weight: 700;
     position: relative;
 }
-/* Bottom window */
 .bottom {
     overflow: hidden;
     position: sticky;

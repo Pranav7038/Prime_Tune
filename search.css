@@ -1,9 +1,612 @@
-.search{
-    margin-top: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100&display=swap');
+:root {
+    color-scheme: light dark;
+}
+.container{
+    display: flex;
+    gap: 5px;
+}
+.preloader {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.main {
+    flex: 0.5;
     flex-direction: column;
+    display: flex;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    color: #BC0E0E;
+}
+img {
+    width: 65px;
+    height: 65px;
+    margin-left: 0px;
+}
+.Home {
+    background-color: #262626;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    border-radius: 20px;
+    justify-content: center;
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+    font-size: 20px;   
+    font-family: 'Poppins', sans-serif;
+}
+.Home li a{
+    color:white
+}
+.Home li a:hover{
+    color: #BC0E0E;
+    background-color: #ffffff; 
+    border-radius: 25px;
+    padding: 5px;
+
+}
+.Home-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+}
+.Home-img img {
+    width: 25px;
+    height: 25px;
+    align-items: left;
+}
+.Search-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    justify-content: center;
+}
+.Search-img img {
+    width: 25px;
+    height: 25px;
+    align-content: left;
+}
+.library {
+    background-color: #262626;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.library-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+.library-img img {
+    width: auto;
+    height: 35px;
+    border-radius: 70%;
+    align-content: left;
+}   
+.library-img li a {
+    font-family: 'Mukta+Vaani', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    font-weight: 100;
+    align-items: right;
+    margin-left: 10px;
+}
+.library-img li a:hover {
+    color: #BC0E0E;
+}
+.Artist li{
+    color:white;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: #444343; 
+    width: 40px;
+    margin-left: 10px;
+    padding: 5px;
+    justify-content: center;
+    font-size: small;
+}
+.Artist li:hover{
+    color: #BC0E0E;
+}
+.Album{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    justify-content: left;
+    display:none;
+}
+.Album1{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album1:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album1 img{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+.Album1 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 15px
+}
+.Album2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album2:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album2 img{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+.Album2 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 15px
+}
+.Album3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album3:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album3 img{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+.Album3 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 15px
+}
+.Album4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: left;
+    cursor: pointer;
+}
+.Album4:hover{
+    background-color: #2F2929;
+    border-radius: 20px;
+}
+.Album4 img{
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+.Album4 h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 15px
+}
+.body{
+    margin-top: 0px;
     width: 90%;
     padding: 10px;
     background-color: #262626;
-    flex: 2.5;
+    flex: 2;
     border-radius: 20px;
 }
+.bottom {
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchbar{
+    margin-left: 100px;
+    position: relative;
+}
+#search-bar{
+    padding: 10px;
+    width: 90%;
+    border-radius: 20px;
+    border-color: #ffffff;
+    font-size: large;
+}
+
+.icons {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+#masterSongCover {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    height: 50px;
+}
+
+#masterSongName {
+    position: fixed;
+    left: 75px;
+    bottom: 15px;
+    height: 50px;
+    max-width: 275px;
+    display: flex;
+    align-items: center;
+    white-space: pre-line;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+
+.progressBarContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#masterSongProgressDuration {
+    padding: 0 5px;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#myProgressBar {
+    margin: auto;
+    width: 40vw;
+    height: 0.7vh;
+    cursor: pointer;
+}
+
+#masterSongDuration {
+    padding: 0 5px;
+    margin-top: 2px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#gif {
+    position: absolute;
+    right: 60px;
+    bottom: 0px;
+    width: 250px;
+    height: 80px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+#horizontalLine {
+    margin: 15px auto;
+    height: 1px;
+    width: 75%;
+    border-bottom: 2px solid white;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.social-icon img{
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+.inline-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+.inline-list a{
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.Albums{
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+}
+.title h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.songlist1{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.song-img1 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #D26500;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img1:hover{
+    background-color: #4E3939;
+}
+.song-img1 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img2 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #FF0B63;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img2:hover{
+    background-color: #4E3939;
+}
+.song-img2 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img3 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #9D00A0;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img3:hover{
+    background-color: #4E3939;
+}
+.song-img3 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.song-img4 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #A86500;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img4:hover{
+    background-color: #4E3939;
+}
+.song-img4 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img5 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #12005C;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img5:hover{
+    background-color: #4E3939;
+}
+.song-img5 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.songlist2{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.song-img6 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #004D6E;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img6:hover{
+    background-color: #4E3939;
+}
+.song-img6 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img7 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #990606;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img7:hover{
+    background-color: #4E3939;
+}
+.song-img7 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img8 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #5F3607;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img8:hover{
+    background-color: #4E3939;
+}
+.song-img8 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+.song-img9 {
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    align-items: center;
+    background-color: #B0824C;
+    border-radius: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+.song-img9:hover{
+    background-color: #4E3939;
+}
+.song-img9 img {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    position: relative;
+}
+
