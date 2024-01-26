@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Tune</title>
+    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <link rel="stylesheet" href="Albums.css">
+</head>
+<meta name="color-scheme" content="dark light">
+
+<body>
+    <div class="preloader">
+        <img src="img/logo.png" alt="PrimeTuneLogo">
+        <h1>PrimeTune</h1>
+    </div>
+    <div class="container">
+        <div class="main">
+            <div class="Home">
+                <div class="Home-img">
+                    <img src="img/HomeLogo.png" alt="homelogo" herf="Home.php">
+                    <li><a href="Home.html">Home</a></li>
+                </div>
+                <div class="Search-img" id="search">
+                    <img src="img/SearchLogo.png" alt="searchlogo" herf="Home.php">
+                    <li><a href="search.html">Search</a></li>
+                </div>
+            </div>
+            <div class="library">
+                <div class="library-img">
+                    <img src="img/librarylogo.jpg" alt="librarylogo">
+                    <li>Library</li>
+                    <li><a herf="Add.php">+</a></li>
+                </div>
+                <div class="Artist">
+                    <li onclick="show()">Artist</li>
+                </div>
+                <div class="Album" id="artistlist">
+                    <div class="Album1" onclick="play()">
+                        <img src="Music_website/atifasalam.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album2" onclick="play()">
+                        <img src="Music_website/armanmalik.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album3" onclick="play()">
+                        <img src="Music_website/arjitsingh.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                    <div class="Album4" onclick="play()">
+                        <img src="Music_website/darshanraval.jpg" alt="albumlogo">
+                        <h3>Atif Asalam</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body" id="home">
+            <div class="songAlbum">
+                <div id="albumTitle">RRR</div>
+                <img id="albumImage" src="Music_website/RRR.png" alt="albumlogo">
+            </div>
+            <div class="Songlist">
+                <div id="Title">Songs</div>
+                <div class="songContainer">
+                    <div class="songItem">
+                        <img src="Music_website/RRR.png" alt="albumlogo">
+                        <span class="songName">Dosti</span>
+                        <span class="playSong">
+                            <span class="time">3:00</span>
+                            <i id="0" class="songItemPlay fas fa-play" aria-hidden="true">::before</i>
+                            </i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7485876171.js" crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

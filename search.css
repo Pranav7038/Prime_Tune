@@ -45,7 +45,8 @@ img {
 li {
     list-style-type: none;
     padding: 10px;
-    font-size: 20px;   
+    font-size: 20px; 
+    font-weight: 500;  
     font-family: 'Poppins', sans-serif;
 }
 .Home li a{
@@ -402,10 +403,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img1:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img1 img {
     width: fit-content;
@@ -425,10 +428,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img2:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img2 img {
     width: fit-content;
@@ -448,10 +453,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img3:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img3 img {
     width: fit-content;
@@ -472,10 +479,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img4:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img4 img {
     width: fit-content;
@@ -495,10 +504,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img5:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img5 img {
     width: fit-content;
@@ -527,10 +538,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img6:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img6 img {
     width: fit-content;
@@ -550,10 +563,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img7:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img7 img {
     width: fit-content;
@@ -573,10 +588,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img8:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img8 img {
     width: fit-content;
@@ -596,10 +613,12 @@ li {
     justify-content: center;
     margin-top: 10px;
     padding-inline: 10px;
+    border: 2px solid rgba(56, 56, 56, 0.76);
+    transition: 0.2s ease-in;
     cursor: pointer;
 }
 .song-img9:hover{
-    background-color: #4E3939;
+    border-color: #ffffff;
 }
 .song-img9 img {
     width: fit-content;
