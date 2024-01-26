@@ -11,103 +11,76 @@
 <meta name="color-scheme" content="dark light">
 
 <body>
-    <div class="preloader">
-        <img src="img/logo.png" alt="PrimeTuneLogo">
-        <h1>PrimeTune</h1>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="img/logo.png" alt="PrimeTuneLogo">
+                    <h1>PrimeTune</h1>
+                </li>
+                <li>
+                    <a href="Home.php">Home</a>
+                </li>
+                <li>
+                    <a href="Search.php">Search</a>
+                </li>
+                <li>
+                    <a href="Add.php">Add</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="container">
-        <div class="main">
-            <div class="Home">
-                <div class="Home-img">
-                    <img src="img/HomeLogo.png" alt="homelogo" herf="Home.php">
-                    <li><a href="Home.html">Home</a></li>
+    <div class="Home-body">
+        <div id="greeting">Good Morning</div>
+        <div class="Allalbum">
+            <div class="songlist1">
+                <div class="song-img1" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/Pushpa.png" alt="song1">
+                    <h3>Allu Arjun song</h3>
                 </div>
-                <div class="Search-img" id="search">
-                    <img src="img/SearchLogo.png" alt="searchlogo" herf="Home.php">
-                    <li><a href="search.html">Search</a></li>
+                <div class="song-img2" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/RRR.png" alt="song2">
+                    <h3>Govyachya-Kinaryav song</h3>
+                </div>
+                <div class="song-img3" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/SR.png" alt="song3">
+                    <h3>Arman Malik song</h3>
+                </div>
+                <div class="song-img4" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/Sarrainodu.png" alt="song4">
+                    <h3>Darshan Raval song</h3>
                 </div>
             </div>
-            <div class="library">
-                <div class="library-img">
-                    <img src="img/librarylogo.jpg" alt="librarylogo">
-                    <li>Library</li>
-                    <li><a herf="Add.php">+</a></li>
+            <div class="songlist2">
+                <div class="song-img5" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/KGF2.png" alt="song5">
+                    <h3>Arjit Singh song</h3>
                 </div>
-                <div class="Artist">
-                    <li onclick="show()">Artist</li>
-                </div>
-                <div class="Album" id="artistlist">
-                    <div class="Album1" onclick="play()">
-                        <img src="Music_website/atifasalam.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album2" onclick="play()">
-                        <img src="Music_website/armanmalik.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album3" onclick="play()">
-                        <img src="Music_website/arjitsingh.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album4" onclick="play()">
-                        <img src="Music_website/darshanraval.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
+                <div class="song-img6" onclick="nevigateAlbum(this)">
+                    <img src="Music_website/AVPL.png" alt="song5">
+                    <h3>Arjit Singh song</h3>
                 </div>
             </div>
         </div>
-        <div class="body" id="home">
-            <div class="Home-body">
-                <div id="greeting">Good Morning</div>
-                <div class="songlist1">
-                    <div class="song-img1" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/Pushpa.png" alt="song1">
-                        <h3>Allu Arjun song</h3>
-                    </div>
-                    <div class="song-img2" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/RRR.png" alt="song2">
-                        <h3>Govyachya-Kinaryav song</h3>
-                    </div>
-                    <div class="song-img3" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/SR.png" alt="song3">
-                        <h3>Arman Malik song</h3>
-                    </div>
-                    <div class="song-img4" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/Sarrainodu.png" alt="song4">
-                        <h3>Darshan Raval song</h3>
-                    </div>
-                </div>
-                <div class="songlist2">
-                    <div class="song-img5" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/KGF2.png" alt="song5">
-                        <h3>Arjit Singh song</h3>
-                    </div>
-                    <div class="song-img6" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/AVPL.png" alt="song5">
-                        <h3>Arjit Singh song</h3>
-                    </div>
-                </div>
-                <footer class="footer">
-                    <div class="footer-container">
-                        <ul class="inline-list">
-                            <a href="Home.php">Web Development</a>
-                            <a href="Search.php">Development</a>
-                            <a href="Add.php">Hosting</a>
-                        </ul>
-                        <ul class="social-icon">
-                            <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
-                                    src="img/twitter_logo.png" alt="Twitter"></a>
-                            <a href="https://www.instagram.com/pranav8289/" target="_blank"><img
-                                    src="img/insta_logo.png" alt="Instagram"></a>
-                            <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img
-                                    src="img/fb_logo.png" alt="Facebook"></a>
-                        </ul>
-                    </div>
-                </footer>
+        <footer class="footer">
+            <div class="footer-container">
+                <ul class="inline-list">
+                    <a href="Home.php">Web Development</a>
+                    <a href="Search.php">Development</a>
+                    <a href="Add.php">Hosting</a>
+                </ul>
+                <ul class="social-icon">
+                    <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
+                            src="img/twitter_logo.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/pranav8289/" target="_blank"><img src="img/insta_logo.png"
+                            alt="Instagram"></a>
+                    <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img src="img/fb_logo.png"
+                            alt="Facebook"></a>
+                </ul>
             </div>
-            <div class="search-body">
-            </div>
-        </div>
+        </footer>
+    </div>
+    <div class="search-body">
     </div>
     <div class="bottom" id="hideBottom">
         <img alt="" id="masterSongCover">

@@ -11,111 +11,82 @@
 <meta name="color-scheme" content="dark light">
 
 <body>
-    <div class="preloader">
-        <img src="img/logo.png" alt="PrimeTuneLogo">
-        <h1>PrimeTune</h1>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="brand">
+                    <img src="img/logo.png" alt="PrimeTuneLogo">
+                    <h1>PrimeTune</h1>
+                </li>
+                <li>
+                    <a href="Home.php">Home</a>
+                </li>
+                <li>
+                    <a href="Search.php">Search</a>
+                </li>
+                <li>
+                    <a href="Add.php">Add</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div class="container">
-        <div class="main">
-            <div class="Home">
-                <div class="Home-img">
-                    <img src="img/HomeLogo.png" alt="homelogo" herf="Home.php">
-                    <li><a href="Home.html">Home</a></li>
-                </div>
-                <div class="Search-img" id="search">
-                    <img src="img/SearchLogo.png" alt="searchlogo" herf="Home.php">
-                    <li><a href="search.html">Search</a></li>
-                </div>
+    <div class="search-body">
+        <div class="searchbar">
+            <input type="text" id="search-bar" placeholder="Search..." onclick="search()">
+            <div id="searchresults"></div>
+        </div>
+        <div class="title">
+            <h1>All Albums</h1>
+        </div>
+        <div class="songlist1">
+            <div class="song-img1" onclick="nevigateAlbum(this)">
+                <img src="Music_website/Marathi.png" alt="song1">
             </div>
-            <div class="library">
-                <div class="library-img">
-                    <img src="img/librarylogo.jpg" alt="librarylogo">
-                    <li>Library</li>
-                    <li><a herf="Add.php">+</a></li>
-                </div>
-                <div class="Artist">
-                    <li onclick="show()">Artist</li>
-                </div>
-                <div class="Album" id="artistlist">
-                    <div class="Album1" onclick="play()">
-                        <img src="Music_website/atifasalam.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album2" onclick="play()">
-                        <img src="Music_website/armanmalik.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album3" onclick="play()">
-                        <img src="Music_website/arjitsingh.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                    <div class="Album4" onclick="play()">
-                        <img src="Music_website/darshanraval.jpg" alt="albumlogo">
-                        <h3>Atif Asalam</h3>
-                    </div>
-                </div>
+            <div class="song-img2" onclick="nevigateAlbum(this)">
+                <img src="Music_website/HindiSong.jpg" alt="song2">
+            </div>
+            <div class="song-img3" onclick="nevigateAlbum(this)">
+                <img src="Music_website/punjabisong.png" alt="song3">
+            </div>
+            <div class="song-img4" onclick="nevigateAlbum(this)">
+                <img src="Music_website/Tamil.png" alt="song4">
+            </div>
+            <div class="song-img5" onclick="nevigateAlbum(this)">
+                <img src="Music_website/Telugu.png" alt="song5">
             </div>
         </div>
-        <div class="body" id="home">
-            <div class="search-body">
-                <div class="searchbar">
-                    <input type="text" id="search-bar" placeholder="Search..." onclick="search()">
-                    <div id="searchresults"></div>
-                </div>
-                <div class="title">
-                    <h1>All Albums</h1>
-                </div>
-                <div class="songlist1">
-                    <div class="song-img1" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/Marathi.png" alt="song1">
-                    </div>
-                    <div class="song-img2" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/HindiSong.jpg" alt="song2">
-                    </div>
-                    <div class="song-img3" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/punjabisong.png" alt="song3">
-                    </div>
-                    <div class="song-img4" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/Tamil.png" alt="song4">
-                    </div>
-                    <div class="song-img5" onclick="nevigateAlbum(this)">
-                        <img src="Music_website/Telugu.png" alt="song5">
-                    </div>
-                </div>
-                <div class="songlist2">
-                    <div class="song-img6">
-                        <img src="Music_website/K-pop.png" alt="song6">
-                    </div>
-                    <div class="song-img7">
-                        <img src="Music_website/pop.png" alt="song7">
-                    </div>
-                    <div class="song-img8">
-                        <img src="Music_website/classical.png" alt="song8">
-                    </div>
-                    <div class="song-img9">
-                        <img src="Music_website/devotional.png" alt="song9">
-                    </div>
-                </div>
+        <div class="songlist2">
+            <div class="song-img6">
+                <img src="Music_website/K-pop.png" alt="song6">
             </div>
-            <footer class="footer">
-                <div class="footer-container">
-                    <ul class="inline-list">
-                        <a href="Home.php">Web Development</a>
-                        <a href="Search.php">Development</a>
-                        <a href="Add.php">Hosting</a>
-                    </ul>
-                    <ul class="social-icon">
-                        <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
-                                src="img/twitter_logo.png" alt="Twitter"></a>
-                        <a href="https://www.instagram.com/pranav8289/" target="_blank"><img
-                                src="img/insta_logo.png" alt="Instagram"></a>
-                        <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img
-                                src="img/fb_logo.png" alt="Facebook"></a>
-                    </ul>
-                </div>
-            </footer>
+            <div class="song-img7">
+                <img src="Music_website/pop.png" alt="song7">
+            </div>
+            <div class="song-img8">
+                <img src="Music_website/classical.png" alt="song8">
+            </div>
+            <div class="song-img9">
+                <img src="Music_website/devotional.png" alt="song9">
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <ul class="inline-list">
+                <a href="Home.php">Web Development</a>
+                <a href="Search.php">Development</a>
+                <a href="Add.php">Hosting</a>
+            </ul>
+            <ul class="social-icon">
+                <a href="https://www.linkedin.com/in/pranav-kshirsagar-3a204823a/" target="_blank"><img
+                        src="img/twitter_logo.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/pranav8289/" target="_blank"><img src="img/insta_logo.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com/pranav.kshirsagar.716/" target="_blank"><img src="img/fb_logo.png"
+                        alt="Facebook"></a>
+            </ul>
+        </div>
+    </footer>
     <script src="https://kit.fontawesome.com/7485876171.js" crossorigin="anonymous"></script>
 </body>
 <script src="script.js"></script>
