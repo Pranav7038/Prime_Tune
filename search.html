@@ -7,6 +7,9 @@
     <title>Prime Tune</title>
     <link rel="icon" href="img/logo.png" type="image/icon type">
     <link rel="stylesheet" href="search.css">
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
 </head>
 <meta name="color-scheme" content="dark light">
 
@@ -32,35 +35,212 @@
         <div class="title">
             <h1>All Albums</h1>
         </div>
-        <div class="songlist1">
-            <div class="song-img1" onclick="nevigateAlbum(this)">
-                <img src="Music_website/Marathi.png" alt="song1">
-            </div>
-            <div class="song-img2" onclick="nevigateAlbum(this)">
-                <img src="Music_website/HindiSong.jpg" alt="song2">
-            </div>
-            <div class="song-img3" onclick="nevigateAlbum(this)">
-                <img src="Music_website/punjabisong.png" alt="song3">
-            </div>
-            <div class="song-img4" onclick="nevigateAlbum(this)">
-                <img src="Music_website/Tamil.png" alt="song4">
-            </div>
-            <div class="song-img5" onclick="nevigateAlbum(this)">
-                <img src="Music_website/Telugu.png" alt="song5">
+        <div class="body">
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+            <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+            <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+            <div class="options">
+                <div class="option active">
+                    <img src="Dabang.jpg" alt="">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Dabanng</div>
+                            <div class="sub">Chori kiya re jiya</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Iteresuselle</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Idiefe</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Inatethi</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="songlist2">
-            <div class="song-img6">
-                <img src="Music_website/K-pop.png" alt="song6">
-            </div>
-            <div class="song-img7">
-                <img src="Music_website/pop.png" alt="song7">
-            </div>
-            <div class="song-img8">
-                <img src="Music_website/classical.png" alt="song8">
-            </div>
-            <div class="song-img9">
-                <img src="Music_website/devotional.png" alt="song9">
+        <div class="body2">
+            <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
+            <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+            <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,700'>
+            <div class="options">
+                <div class="option active">
+                    <img src="Dabang.jpg" alt="">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play" aria-hidden="true"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Dabanng</div>
+                            <div class="sub">Chori kiya re jiya</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Iteresuselle</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Idiefe</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Inatethi</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option"
+                    style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Oretemauw</div>
+                            <div class="sub">Omuke trughte a otufta</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

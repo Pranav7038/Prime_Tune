@@ -207,261 +207,396 @@ nav a:hover span {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.Albums{
+.body{
     display: flex;
-    margin-top: 20px;
-    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color:#262626;
 }
-.title h1{
+
+.body .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    width: calc(100% - 50px);
+    height: 300px;
+}
+
+@media screen and (max-width: 718px) {
+    .body .options {
+        min-width: 520px;
+    }
+
+    .body .options .option:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .body .options {
+        min-width: 440px;
+    }
+
+    .body .options .option:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .body .options {
+        min-width: 360px;
+    }
+
+    .body .options .option:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .body .options {
+        min-width: 280px;
+    }
+
+    .body .options .option:nth-child(2) {
+        display: none;
+    }
+}
+
+.body .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 50px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.body .options .option:nth-child(1) {
+    --defaultBackground:url(Music_website/Dabang.jpg);
+}
+
+.body .options .option:nth-child(2) {
+    --defaultBackground: #FC6E51;
+}
+
+.body .options .option:nth-child(3) {
+    --defaultBackground: #FFCE54;
+}
+
+.body .options .option:nth-child(4) {
+    --defaultBackground: #2ECC71;
+}
+
+.body .options .option:nth-child(5) {
+    --defaultBackground: #5D9CEC;
+}
+
+.body .options .option:nth-child(6) {
+    --defaultBackground: #AC92EC;
+}
+
+.body .options .option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+    /*&:active {
+transform:scale(0.9);
+}*/
+}
+
+.body .options .option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.body .options .option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.body .options .option.active .label .info>div {
+    left: 0px;
+    opacity: 1;
+}
+
+.body .options .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.body .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+body .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+body .options .option:not(.active) .label .info>div {
+    left: 20px;
+    opacity: 0;
+}
+
+body .options .option .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+body .options .option .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+body .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #BC0E0E;
+}
+
+body .options .option .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
     color: white;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 35px;
-    margin-top: 40px;
-    margin-left: 50px;
-}
-.songlist1{
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.song-img1 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #D26500;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img1:hover{
-    border-color: #BC0E0E;
-}
-.song-img1 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.song-img2 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #FF0B63;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img2:hover{
-    border-color: #ffffff;
-}
-.song-img2 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.song-img3 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #9D00A0;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img3:hover{
-    border-color: #ffffff;
-}
-.song-img3 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
+    white-space: pre;
 }
 
-.song-img4 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #A86500;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img4:hover{
-    border-color: #ffffff;
-}
-.song-img4 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
+body .options .option .label .info>div {
     position: relative;
-}
-.song-img5 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #12005C;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img5:hover{
-    border-color: #ffffff;
-}
-.song-img5 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.songlist2{
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.song-img6 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #004D6E;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img6:hover{
-    border-color: #ffffff;
-}
-.song-img6 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.song-img7 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #990606;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img7:hover{
-    border-color: #ffffff;
-}
-.song-img7 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.song-img8 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #5F3607;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img8:hover{
-    border-color: #ffffff;
-}
-.song-img8 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
-}
-.song-img9 {
-    width: fit-content;
-    height: fit-content;
-    display: grid;
-    align-items: center;
-    background-color: #B0824C;
-    border-radius: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding-inline: 10px;
-    border: 2px solid rgba(56, 56, 56, 0.76);
-    transition: 0.2s ease-in;
-    cursor: pointer;
-}
-.song-img9:hover{
-    border-color: #ffffff;
-}
-.song-img9 img {
-    width: fit-content;
-    height: fit-content;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
 }
 
+body .options .option .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+body .options .option .label .info .sub {
+    transition-delay: 0.1s;
+}
+.body2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color:#262626;
+}
+.body2 {
+    margin-top: 20px;
+    width: 90%;
+    padding: 10px;
+    background-color: #262626;
+    flex: 2;
+    border-radius: 20px;
+}
+.body2 .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    width: calc(100% - 50px);
+    height: 300px;
+}
+
+@media screen and (max-width: 718px) {
+    .body2 .options {
+        min-width: 520px;
+    }
+
+    .body2 .options .option:nth-child(5) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .body2 .options {
+        min-width: 440px;
+    }
+
+    .body2 .options .option:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .body2 .options {
+        min-width: 360px;
+    }
+
+    .body2 .options .option:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .body2 .options {
+        min-width: 280px;
+    }
+
+    .body2 .options .option:nth-child(2) {
+        display: none;
+    }
+}
+
+.body2 .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 50px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.body2 .options .option:nth-child(1) {
+    --defaultBackground:url(Music_website/Dabang.jpg);
+}
+
+.body2 .options .option:nth-child(2) {
+    --defaultBackground: #FC6E51;
+}
+
+.body2 .options .option:nth-child(3) {
+    --defaultBackground: #FFCE54;
+}
+
+.body2 .options .option:nth-child(4) {
+    --defaultBackground: #2ECC71;
+}
+
+.body2 .options .option:nth-child(5) {
+    --defaultBackground: #5D9CEC;
+}
+
+.body2 .options .option:nth-child(6) {
+    --defaultBackground: #AC92EC;
+}
+
+.body2 .options .option.active {
+    flex-grow: 10000;
+    transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+    /*&:active {
+transform:scale(0.9);
+}*/
+}
+
+.body2 .options .option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.body2 .options .option.active .label {
+    bottom: 20px;
+    left: 20px;
+}
+
+.body2 .options .option.active .label .info>div {
+    left: 0px;
+    opacity: 1;
+}
+
+.body2 .options .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+}
+
+.body2 .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+.body2 .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+}
+
+.body2 .options .option:not(.active) .label .info>div {
+    left: 20px;
+    opacity: 0;
+}
+
+.body2 .options .option .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.body2 .options .option .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.body2 .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #BC0E0E;
+}
+
+.body2 .options .option .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+}
+
+.body2 .options .option .label .info>div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.body2 .options .option .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.body2 .options .option .label .info .sub {
+    transition-delay: 0.1s;
+}

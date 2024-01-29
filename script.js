@@ -13,16 +13,20 @@ let greeting = document.getElementById('greeting');
 if (greeting != null)
     greeting.innerHTML = greet;
 
+$(".option").click(function () {
+    $(".option").removeClass("active");
+    $(this).addClass("active");
+});
 // Navigation Code
 function navigateAlbum(ele) {
     window.location.href = `albums.php?value=${ele.id}`;
 }
-function show(){
+function show() {
     var artistList = document.getElementById('artistlist');
-    if(artistList.style.display === "none"){
+    if (artistList.style.display === "none") {
         artistList.style.display = "block";
     }
-    else{
+    else {
         artistList.style.display = "none";
     }
 }
