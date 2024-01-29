@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani&family=Poppins:wght@300;400;500;600&family=Raleway:wght@100&display=swap');
+
 :root {
     color-scheme: light dark;
 }
-.container{
+
+.container {
     display: flex;
     gap: 5px;
 }
+
 .preloader {
     display: flex;
     align-items: center;
     margin-left: 5px;
     margin-right: 5px;
-    
+
 }
-nav img{
+
+nav img {
     width: 65px;
     height: 65PX;
 }
+
 nav ul {
     display: flex;
     align-items: center;
@@ -25,9 +30,11 @@ nav ul {
     list-style: none;
     color: white;
 }
+
 nav ul li {
     font-weight: 500;
 }
+
 nav a {
     position: relative;
     font-size: 1.1em;
@@ -60,7 +67,8 @@ nav a:hover span {
     transform: scale(1) translateY(0);
     opacity: 1;
 }
-.body{
+
+.body {
     margin-top: 0px;
     width: 90%;
     padding: 10px;
@@ -68,6 +76,7 @@ nav a:hover span {
     flex: 2;
     border-radius: 20px;
 }
+
 .search-body {
     background-color: rgba(56, 56, 56, 0.76);
     margin: auto;
@@ -81,6 +90,7 @@ nav a:hover span {
     border-top-right-radius: 14px;
     flex-direction: column;
 }
+
 .bottom {
     overflow: hidden;
     position: sticky;
@@ -94,11 +104,13 @@ nav a:hover span {
     align-items: center;
     flex-direction: column;
 }
-.searchbar{
+
+.searchbar {
     margin-left: 100px;
     position: relative;
 }
-#search-bar{
+
+#search-bar {
     padding: 10px;
     width: 90%;
     border-radius: 20px;
@@ -174,13 +186,15 @@ nav a:hover span {
     opacity: 0;
     transition: opacity 0.5s ease-in;
 }
+
 #horizontalLine {
     margin: 15px auto;
     height: 1px;
     width: 75%;
     border-bottom: 2px solid white;
 }
-.social-icon{
+
+.social-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,12 +202,14 @@ nav a:hover span {
     margin: auto;
     margin-top: 20px;
 }
-.social-icon img{
+
+.social-icon img {
     border-radius: 5px;
     width: 40px;
     height: 40px;
 }
-.inline-list{
+
+.inline-list {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,402 +217,114 @@ nav a:hover span {
     margin: auto;
     margin-top: 20px;
 }
-.inline-list a{
+
+.inline-list a {
     color: white;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.body{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-    background-color:#262626;
-}
-
-.body .options {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    overflow: hidden;
-    width: calc(100% - 50px);
-    height: 300px;
-}
-
-@media screen and (max-width: 718px) {
-    .body .options {
-        min-width: 520px;
-    }
-
-    .body .options .option:nth-child(5) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 638px) {
-    .body .options {
-        min-width: 440px;
-    }
-
-    .body .options .option:nth-child(4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 558px) {
-    .body .options {
-        min-width: 360px;
-    }
-
-    .body .options .option:nth-child(3) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 478px) {
-    .body .options {
-        min-width: 280px;
-    }
-
-    .body .options .option:nth-child(2) {
-        display: none;
-    }
-}
-
-.body .options .option {
+.carousel {
+    width: 100%;
+    height: 10%;
+    overflow-x: scroll;
     position: relative;
-    overflow: hidden;
-    min-width: 50px;
-    margin: 10px;
-    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-    background-size: auto 120%;
-    background-position: center;
-    cursor: pointer;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.body .options .option:nth-child(1) {
-    --defaultBackground:url(Music_website/Dabang.jpg);
+.carousel__container {
+    white-space: nowrap;
+    margin: 50px 0px;
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-.body .options .option:nth-child(2) {
-    --defaultBackground: #FC6E51;
-}
-
-.body .options .option:nth-child(3) {
-    --defaultBackground: #FFCE54;
-}
-
-.body .options .option:nth-child(4) {
-    --defaultBackground: #2ECC71;
-}
-
-.body .options .option:nth-child(5) {
-    --defaultBackground: #5D9CEC;
-}
-
-.body .options .option:nth-child(6) {
-    --defaultBackground: #AC92EC;
-}
-
-.body .options .option.active {
-    flex-grow: 10000;
-    transform: scale(1);
-    max-width: 600px;
-    margin: 0px;
-    border-radius: 40px;
-    background-size: auto 100%;
-    /*&:active {
-transform:scale(0.9);
-}*/
-}
-
-.body .options .option.active .shadow {
-    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
-
-.body .options .option.active .label {
-    bottom: 20px;
-    left: 20px;
-}
-
-.body .options .option.active .label .info>div {
-    left: 0px;
-    opacity: 1;
-}
-
-.body .options .option:not(.active) {
-    flex-grow: 1;
-    border-radius: 30px;
-}
-
-.body .options .option:not(.active) .shadow {
-    bottom: -40px;
-    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-}
-
-body .options .option:not(.active) .label {
-    bottom: 10px;
-    left: 10px;
-}
-
-body .options .option:not(.active) .label .info>div {
-    left: 20px;
-    opacity: 0;
-}
-
-body .options .option .shadow {
+.categories__title {
+    color: rgb(77, 55, 102);
+    font-size: 28px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 120px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    padding-left: 30px;
 }
 
-body .options .option .label {
-    display: flex;
-    position: absolute;
-    right: 0px;
-    height: 40px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-}
-
-body .options .option .label .icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 30px;
-    max-width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background-color: #BC0E0E;
-}
-
-body .options .option .label .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-    color: white;
-    white-space: pre;
-}
-
-body .options .option .label .info>div {
-    position: relative;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-}
-
-body .options .option .label .info .main {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-body .options .option .label .info .sub {
-    transition-delay: 0.1s;
-}
-.body2{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-    background-color:#262626;
-}
-.body2 {
-    margin-top: 20px;
-    width: 90%;
-    padding: 10px;
-    background-color: #262626;
-    flex: 2;
+.carousel-item {
+    width: 200px;
+    height: 250px;
     border-radius: 20px;
-}
-.body2 .options {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
+    background-color: #95bcd6;
     overflow: hidden;
-    width: calc(100% - 50px);
-    height: 300px;
-}
-
-@media screen and (max-width: 718px) {
-    .body2 .options {
-        min-width: 520px;
-    }
-
-    .body2 .options .option:nth-child(5) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 638px) {
-    .body2 .options {
-        min-width: 440px;
-    }
-
-    .body2 .options .option:nth-child(4) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 558px) {
-    .body2 .options {
-        min-width: 360px;
-    }
-
-    .body2 .options .option:nth-child(3) {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 478px) {
-    .body2 .options {
-        min-width: 280px;
-    }
-
-    .body2 .options .option:nth-child(2) {
-        display: none;
-    }
-}
-
-.body2 .options .option {
-    position: relative;
-    overflow: hidden;
-    min-width: 50px;
-    margin: 10px;
-    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-    background-size: auto 120%;
-    background-position: center;
+    margin-right: 10px;
+    margin-top: 70px;
+    display: inline-block;
     cursor: pointer;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    -webkit-transition: 1000ms all;
+    transition: 1000ms all;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    position: relative;
 }
 
-.body2 .options .option:nth-child(1) {
-    --defaultBackground:url(Music_website/Dabang.jpg);
+.carousel-item:hover~.carousel-item {
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
 }
 
-.body2 .options .option:nth-child(2) {
-    --defaultBackground: #FC6E51;
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
 }
 
-.body2 .options .option:nth-child(3) {
-    --defaultBackground: #FFCE54;
-}
-
-.body2 .options .option:nth-child(4) {
-    --defaultBackground: #2ECC71;
-}
-
-.body2 .options .option:nth-child(5) {
-    --defaultBackground: #5D9CEC;
-}
-
-.body2 .options .option:nth-child(6) {
-    --defaultBackground: #AC92EC;
-}
-
-.body2 .options .option.active {
-    flex-grow: 10000;
-    transform: scale(1);
-    max-width: 600px;
-    margin: 0px;
-    border-radius: 40px;
-    background-size: auto 100%;
-    /*&:active {
-transform:scale(0.9);
-}*/
-}
-
-.body2 .options .option.active .shadow {
-    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-}
-
-.body2 .options .option.active .label {
-    bottom: 20px;
-    left: 20px;
-}
-
-.body2 .options .option.active .label .info>div {
-    left: 0px;
+.carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
     opacity: 1;
 }
 
-.body2 .options .option:not(.active) {
-    flex-grow: 1;
-    border-radius: 30px;
+.carousel-item__img {
+    width: 200px;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
-.body2 .options .option:not(.active) .shadow {
-    bottom: -40px;
-    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-}
-
-.body2 .options .option:not(.active) .label {
-    bottom: 10px;
-    left: 10px;
-}
-
-.body2 .options .option:not(.active) .label .info>div {
-    left: 20px;
+.carousel-item__details {
+    background: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            from(rgba(0, 0, 0, 0.9)),
+            to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
     opacity: 0;
-}
-
-.body2 .options .option .shadow {
+    -webkit-transition: 450ms opacity;
+    transition: 450ms opacity;
+    padding: 10px;
     position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 120px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.body2 .options .option .label {
-    display: flex;
-    position: absolute;
-    right: 0px;
-    height: 40px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+.carousel-item__details:hover {
+    opacity: 1;
 }
 
-.body2 .options .option .label .icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 30px;
-    max-width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    background-color: #BC0E0E;
+.carousel-item__details span {
+    /* width: 10px;
+    height: 10px; */
+    font-size: 0.9rem;
+    color: #2ecc71;
+    /* background-color: white; */
 }
 
-.body2 .options .option .label .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-    color: white;
-    white-space: pre;
+.carousel-item__details .controls {
+    padding-top: 180px;
 }
 
-.body2 .options .option .label .info>div {
-    position: relative;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-}
-
-.body2 .options .option .label .info .main {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.body2 .options .option .label .info .sub {
-    transition-delay: 0.1s;
+.carousel-item__details .carousel-item__details--title,
+.carousel-item__details--subtitle {
+    color: #fff;
+    margin: 5px 0;
 }
