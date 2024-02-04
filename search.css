@@ -315,7 +315,7 @@ nav a:hover span {
     /* width: 10px;
     height: 10px; */
     font-size: 0.9rem;
-    color: #2ecc71;
+    color: #BC0E0E;
     /* background-color: white; */
 }
 
@@ -325,6 +325,13 @@ nav a:hover span {
 
 .carousel-item__details .carousel-item__details--title,
 .carousel-item__details--subtitle {
+    font-family: 'Poppins', sans-serif;
     color: #fff;
     margin: 5px 0;
+}
+.carousel__container h2 {
+    color: rgb(132, 58, 218);
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    position: absolute;
 }
